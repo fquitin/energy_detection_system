@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="dsp48_mul">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-7-27T13:33:29</timestamp>
+    <pin polarity="Input" x="0" y="112" name="a[15:0]" />
+    <pin polarity="Input" x="0" y="144" name="b[15:0]" />
+    <pin polarity="Input" x="0" y="368" name="ce" />
+    <pin polarity="Input" x="0" y="400" name="sclr" />
+    <pin polarity="Input" x="0" y="432" name="clk" />
+    <pin polarity="Output" x="864" y="144" name="p[31:0]" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">dsp48_mul</text>
+        <rect width="800" x="32" y="32" height="448" />
+        <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="112" type="pin a[15:0]" />
+        <line x2="32" y1="144" y2="144" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="144" type="pin b[15:0]" />
+        <line x2="32" y1="368" y2="368" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="368" type="pin ce" />
+        <line x2="32" y1="400" y2="400" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="400" type="pin sclr" />
+        <line x2="32" y1="432" y2="432" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="432" type="pin clk" />
+        <line x2="832" y1="144" y2="144" style="linewidth:W" x1="864" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="828" y="144" type="pin p[31:0]" />
+    </graph>
+</symbol>

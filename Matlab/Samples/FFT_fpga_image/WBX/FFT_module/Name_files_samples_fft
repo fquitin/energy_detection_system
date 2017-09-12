@@ -1,0 +1,47 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_900M_fs_10M_fft_image_v2.dat
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: Bluethoot standard at 901Mhz and 896Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_fft_image_v2_int.dat
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -28dbm
+GainAmplifier: 38db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_fft_image_v2_float.dat
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -28dbm
+GainAmplifier: 38db
+*******************************************************
+
+
+*******************************************************
+Name:sampled_data_sig_TETRA_std_fc_400M_fs_10M_fft_image_v2.dat
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -20dbm
+GainAmplifier: 0db using an antenna 
+*******************************************************

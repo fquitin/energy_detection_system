@@ -1,0 +1,273 @@
+==========================================
+
+How to customize Ettus Research USRP (Model N210) RX signal path
+
+==========================================
+
+This is an informal document about the nitty-gritty details involved in customizing the Ettus Research USRP N210 FPGA.  I describe in practical terms how to modify the signal path between the front end, digital downconverter, and packet engine.  I also address how to control the 32 digital input/output pins, how to incorporate digital inputs into the data stream, and how to create FPGA registers that can be set from the host.  
+
+The instructions are limited in scope to the following:
+- USRP N210 
+- Centos 6  (i.e., RedHat 6) 
+- Receive Path Only   (my projects thus far have used other devices for transmit)
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+1.  Setting up the host computer
+
+Software dependencies:   (Some of these might be unnecessary, TBD)
+sudo yum -y install git   # version control
+sudo yum -y install cmake    # cross platform open-source build system
+sudo yum -y install boost      # cross platform peer reviewed C++ libraries
+sudo yum -y install python  
+sudo yum -y install libusb
+sudo yum -y install cheetah   # python-based OO template engine
+sudo yum -y install doxygen   # generates documentation from doumented source code
+sudo yum -y install docutils
+
+Get uhd repository from ettus
+cd /opt
+git clone git://code.ettus.com/ettus/uhd.git
+sudo chown -R <you> /opt/uhd        # this is better than having to do "sudo" for all subsequent operations!
+
+Install Xilinx ISE software:
+To use the larger  FPGA in the N210, you need a license for the xilinx tools, not the free WebPack.  
+I am using Xilinx ISE version 13.4.  However, at Ettus (last I heard) they use 12.1.  13.4 exhibits more failures in meeting the 10ns clock timing constraint.  You might have fewer errors if you go back to 12.1.  I refer to compile-time errors after place-and-route, not run-time errors.  The timing still seems to work for me in run-time despite the estimation of ~ 11 ns minimum clock period after analysis.  However, it seems to me that the 13.4 version is probably not less skilled at placing and routing the design, rather, it is probably more skilled at modeling the device.  So there might not be an advantage to 12.1.  
+
+Go to Xilinx and view the installation instructions.  I recommend placing the tools into /opt/Xilinx.  
+The license management UI does not work in linux.  Instead, follow instructions in the xilinx installation & licensing instructions pdf.    Untar the installer into /opt and do "sudo ./xsetup".  
+
+Add the following to your ~/.tcshrc file:
+  set path = ($path /opt/uhd/host/build/examples /opt/uhd/host/build/utils /opt/uhd/host/build/examples /opt/uhd/host/build/lib  /opt/uhd/host/utils )
+  set path = ($path /usr/local/src/boost-trunk/libs)
+  setenv LM_LICENSE_FILE <location of your license file or server>
+  setenv XILINXD_LICENSE_FILE <location of your license file or server>
+  
+You will want plenty of memory to do the compilation.  Consult the ISE Release Notes for information about memory addressing in Red Hat 32-bit vs 64-bit.  
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+2.  Adding a custom verilog file  (initially, it will be a pass-through).
+
+In my example below, the custom verilog module is iwFpgaRx.  This is a modified copy of the template file custom_dsp_rx.v.  (You could include that file as-is, but I placed it elsewhere for easier network access.)
+
+Go to  /opt/uhd/fpga/usrp2/top/N2x0. Make a copy of Makefile.N210R4 called Makefile.custom.   Make these edits:
+
+    BUILD_DIR = /opt/uhd/fpga/usrp2/top/N2x0/build-custom
+    CUSTOM_SRCS = /home/hartley/iwrapettus/iwFpgaRx.v
+
+Ignore the following; I could not resolve the semantic issues with make vs xilinx macros.    
+    #CUSTOM_DEFS =    
+
+Xilinx wants separator = "|".  If you don't get it right, xilinx tools will proceed without your custom module and probably be "successful", but you won't know there's a problem!  Instead, go down to "Verilog Macros"  line below and do this:
+
+    "Verilog Macros" "LVDS=1|RX_DSP0_MODULE=iwFpgaRx"
+
+For two channel operation (two parallel DDCs with two custom modules):
+
+    "Verilog Macros" "LVDS=1|RX_DSP0_MODULE=iwFpgaRx|RX_DSP1_MODULE=iwFpgaRx"
+
+The LVDS macro is there to make the A-to-D interface correct for the R4 board.  Pay attention to whether you have R3 or R4 hardware so you don't fry it.
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+3.  Compiling the FPGA source 
+
+Start a fresh tcsh shell and type:
+    cd /opt/Xilinx/13.4/ISE_DS
+    source ./settings64.csh     # sets up path and other shell variables
+    cd /opt/uhd/fpga/usrp2/top/N2x0
+    make -f Makefile.custom bin
+    # Wait 1-2 hours.
+    # Bin file goes in build-custom/u2plus.bin ... must then be renamed to contain n210_r4  or the net burner will reject it.
+    mv build-custom/u2plus.bin build-custom/n210_r4_fpga.bin
+    usrp_n2xx_net_burner.py --addr=192.168.10.2 --fpga=/opt/uhd/fpga/usrp2/top/N2x0/build-custom/n210_r4_fpga.bin
+
+It frequently gets stuck in place-and-route for an additional hour or so but then still finishes.  Do not kill it (unless you have waited a whole day)!  If there is an error in the tools, make will likely keep going and then make it quite difficult for you to figure out what the error was.  You can go into the build directory and find the Xilinx log file for each phase.  Try grepping for your custom module name.  
+
+Remove and re-apply power to the N210.  (I think there is a software option for this more recently, check it out.)
+
+Finally, 
+    sudo ifup eth0
+
+(Note:  When you run your UHD host code  later, use a separate shell.  The xilinx tools set a different version of a runtime library which conflicts with uhd at run time.  Use one shell for xilinx and another for uhd.)
+
+Keeping the fpga, firmware, and host in sync:
+The firmware and fpga and host each keep a version number which is checked at run time.  
+If you get a compatibility error, you have to look into whether you have successfully updated all 3 components based on the same code base.  Did you use "master" or "release"?  Binary images or rebuilt from source?  Which library files are on your path?
+
+Compiling the Firmware:    I have not had to modify the firmware source.  I was not able to get zpu_gcc working on my system.  I tried to rebuild the zylin zpu source for a 64 bit arch, but failed.  Instead, I use the binary image firmware from Ettus (see below).  It is up to me to keep the version syncing correct.  If I have to modify the firmware someday, I will try building it on Windows.
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+4.  Building the UHD host source:
+
+If you are doing fpga development, use a separate shell for this.  (If you run xilinx settings64.csh before building host code, you get an error from a standard  library that xilinx uses a different version of.)
+
+    cd /opt/uhd/host   
+
+First time:
+    mkdir build     # The first make will put all results in here
+    cd build
+    cmake ../        # Generates makefiles from templates
+
+Each time:
+    make              
+    sudo make install    
+    sudo ldconfig    
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+5.  Creating your host application:
+
+For my purposes, the examples "rx_samples_to_file" and "rx_multi_samples" were good templates.  Frames are obtained with rx_stream->recv().  So far I have not done anything more sophisticated than that.  
+
+When you compile your host app, you could do a makefile if you are good at gnu make, or integrate with ettus makefile edifice, but I found it easier to just compile like this:
+
+    gcc -I /opt/uhd/host/include -luhd my_host_app.cpp -O2 -o my_host_app
+
+During runtime, the uhd runtime library (/usr/local/lib64/libuhd.so) will be dynamically linked.  (If you get  a compatibility error at run time, this might mean you did not do "sudo make install" and the old version of the library is still in place. )
+
+Remember to do this before running:
+
+    sudo sysctl -w net.core.rmem_max=50000000
+    sudo sysctl -w net.core.wmem_max=1048576
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+6.  Customizing the FPGA  signal path
+
+To understand how the modules fit together, start at "u2plus.v" and traverse the module instantiation hierarchy:  
+u2plus instantiates u2plus_core
+u2plus_core instantiates rx_frontend, ddc_chain, vita_rx_chain
+ddc_chain instantiates dsp_rx_glue
+dsp_rx_glue instantiates custom_dsp_rx or your custom module  (if the verilog macro is defined)
+
+Look at the module in/out list for custom_dsp_rx.v.  By default, there are assign statements that tie the front end to the ddc, and tie the ddc to the packetizer.  This is a "pass through".   Here you can do any of the following:
+- Insert your customizations between the frontend and the ddc;
+- Insert your customizations between the ddc and the packetizer;
+- Bypass the ddc and put anything you want between the frontend and the packetizer.  
+
+Here is how the timing works.  "clk" is always 100MHz and everything happens synchronously with it.  frontend_i and frontend_q change on every rising edge of the clock.  "frontend" here means the A-to-D full-rate 100 MSPS samples, after dc bias removal and I/Q balance correction.  (you can bypass those pieces elsewhere if you wish.)  frontend_i is "RX_A" input path, and q is "B".   ddc output samples occur M times less often than the clock.  M is determined by software when you request a baseband sample rate.  For example, in rx_samples_to_file, with rate==5000000, M turns out to be 20  = 100 / 5.  The signal ddc_out_strobe goes high for one cycle out of every M cycles.  If you are using the DDC, you use ddc_out_strobe to check when there is a valid sample that can be released to the packet engine.  Your custom code generates bb_sample along with the bb_strobe bit, which controls the packet engine.  The packet engine waits for bb_strobe to be high and then stores one pair of samples from "bb_sample" (high 16 bits are i, low 16 bits are are q).    
+
+You can control the timing by making bb_strobe output different from the ddc_out_strobe input.  
+
+For example, one thing you can do is to set bb_strobe high for N cyles, bypassing the DDC altogether, like this:  
+
+always @(posedge clock)
+	if (reset | ~enable) 
+		begin
+			bb_strobe_reg <= 0;
+		end
+	else
+		begin      
+			bb_sample_reg[31:16] <= frontend_i[23:8]; 
+			bb_sample_reg[15:0]  <= frontend_q[23:8];  
+			if ((count >= 0) & (counter <= (N-1) ))
+				bb_strobe_reg <= 1;
+			else
+				bb_strobe_reg <= 0;
+		end
+
+In this case, there is a counter that is incremented up to some period (PRF), and the strobe is high for a portion of that period.  The packet engine will wrap up M samples in a packet as soon as M is reached.  It is up to you to keep the data rate low enough for the gigabit ethernet interface, which cannot support 100 MSPS.  But - here's the cool part - you do not have to enforce the pre-ordained baseband sample rate.  In this module, you can release samples at any real-time average rate, in bursts or whatever ... and the packet engine will store them as they come, and the UHD streamer recv() call will accept the packets as they come.  They do not have to be at regular rate that was specified at the outset.   (This may not be true in all timed modes; I don't know; but in the simple scenario of rx_samples_to_file, I have determined that there is no enforcement of the correct baseband rate.)  This example gives full-rate 100MSPS samples in bursts, suitable for use with the LFRX daughterboard.  
+
+Or, if you are using the DDC and simply doing your processing on baseband samples, you can use ddc_out_strobe to enable your logic.  For example:
+
+always @(posedge clock)
+	if (reset | ~enable) 
+		// initialize
+	else
+		begin      
+			if (ddc_out_strobe) & (count >= 0) & (count <= (N-1) ) 
+				bb_strobe_reg <= 1;
+			else
+				bb_strobe_reg <= 0;
+		        
+		        
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+7. User Settings Registers
+
+You can easily create a User Settings Register in your custom module, and you can set the value in your host app.  In your verilog module, instantiate as follows:
+
+    reg [31:0] prtCycles;  // Local register set by User Settings Bus
+    wire [31:0] prtCycles_sr;   // setting_reg module output 
+    wire prtCycles_ch;     // bit indicating the reg has just changed
+    setting_reg #(.my_addr(0)) sr_0        //  0 is the address you choose. (there is an 8 bit address space)
+        (.clk(clock),.rst(reset),.strobe(set_stb),.addr(set_addr),.in(set_data),
+         .out(prtCycles_sr),.changed(prtCycles_ch));
+
+Update the register like this:    (NOT conditional on reset or ~enable because this happens before streaming)
+
+    always @(posedge clock)
+          if (prtCycles_ch)
+             prtCycles <= prtCycles_sr;
+
+In the host app:  prior to streaming, specify the register address, value, and motherboard = 0.
+
+    usrp->set_user_register(0, prtCycles , 0);     
+
+The register API is write-only.  You cannot get information from the USRP to the host this way.
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+8. Digital I/O Pins
+
+io_rx[15:0] and io_tx[15:0] are all available as IO pins.  The name simply indicates the location of the headers on rx or tx daughterboard.  All 32 can be configured as LVCMOS inputs or outputs.  
+
+There is already a mechanism governing the IO pins, called "gpio_atr", which you need to disable.  What is ATR?  From a gnuradio forum post of 2005:  'Matt's currently working on an "automatic transmit/receive switching" mode for the USRP.  It's an optional feature that we plan to use with a bunch of the daughterboards.  Depending on whether there's data in the FPGA transmit fifo or not, specified daughterboard pins automatically change state.'   This module has a tri-state driver for these pins.  See usrp-users discussions in June and October 2012.
+
+Therefore, in u2plus_core.v:  Remove the instantiation of the gpio_atr module.  Assign gpio_readback = 0 here to avoid error.  This causes the pins to be no longer connected to the host-controlled gpio bus.  I checked that there are no other drivers of those pins, so you can safely drive them in your custom module.   The way to think of digital output pins in the fpga is:  if there are no logic elements driving a pin, it is an Input.  If there are, it is an Output.  (I.e., you do not have to set a register somewhere designating that pin as an output or input.) 
+
+Next, for both input and output, you have to make the pins visible to the scope of your module by passing the names from the top level down.   In u2plus_core.v, ddc_chain.v, dsp_rx_glue.v, and the custom verilog module:  Add io_rx and io_tx to the module i/o lists, declaring as "inout" where required. 
+
+You can incorporate the digital input pin state into your baseband data stream as follows.  This overwrites the first sample of the frame with the tx daughterboard pins, along with a 16-bit frame counter.  
+
+          // Update the data stream
+          if (count == 0)
+             begin
+               bb_sample_reg[31:16] <= pulse_seq_num;    
+               bb_sample_reg[15:0]  <= io_tx[15:0]; 
+             end
+          else  
+             begin
+               bb_sample_reg[31:16] <= frontend_i[23:8]; 
+               bb_sample_reg[15:0]  <= frontend_q[23:8];  
+             end  
+
+(It may be possible to get these values into the packet header instead, but this is how I did it.  It depends whether you care about retaining all of the available samples, how often you need to read the digital pins, etc.)
+
+Subsequently, take care not to connect a daughterboard that uses these pins.  Do not access the gpio bus from the host.  Do not  instantiate a second dsp chain instance that would attempt to simultaneously drive the pins.  
+
+When these pins change state, the switching transients may contaminate your RX data.  This can occur even if you only drive TX daughterboard pins.  You should take care with impedance matching, shielding, et cetera.  It would be nice if you could change the pins to LVDS, but it doesn't seem that this is possible in this IO bank  (i don't remember the details).  Simply lowering the drive current spec did not help in my case.   Perhaps you can design your system so that pins do not change state during the most important phase of your data acquisition.  
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+9.  Syncing the FPGA to 10 MHz reference clock:
+Connect 0-15dBm 10MHz sinusoid to the front panel "REF" input.
+
+Do this in the host application:
+  
+   usrp->set_clock_config(uhd::clock_config_t::external(),0);
+
+
+
+==========================================
+
+This information should be applicable to other applications requiring alteration of the digital signal path or using digital inputs & outputs.  The Ettus documentation is extremely sparse, perhaps for good reason;  however, it takes a typical non-expert months to work through the details that are missing and get to this point.   Note:  I am not a rock star expert in any of the topics I am addressing.  I am merely a "user" who has struggled and gotten a couple systems functioning.  There may be better ways to accomplish these things.  Use this information at your own risk.
+
+
+Tom Hartley
+University of Massachusetts
+April 2013
+
+
+==========================================

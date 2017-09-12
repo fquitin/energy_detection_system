@@ -1,0 +1,18 @@
+set terminal postscript eps size 3.5,2.62 enhanced color \
+    font 'Helvetica,20' linewidth 2
+set output 'introduction.eps'
+ set multiplot layout 2, 1 title "Energy Detection Frequency span" font ",14" 
+ set tmargin 2 
+ set title "|Y|²" 
+ unset key 
+ set xrange [7.895e+08:8.395e+08]
+ set format y "%e" 
+ set yrange [0:100]
+ plot "SQM.dat" binary format="%lf"  with point title 'SQM'
+ set title "Detection" 
+ unset key
+ set xrange [7.895e+08:8.395e+08]
+ set yrange [-0.1:1.1]
+ plot "Detection.dat" binary format="%lf"  with lines title 'DETECTION'
+ unset multiplot
+

@@ -1,0 +1,196 @@
+#include <uhd/types/tune_request.hpp>
+#include <uhd/utils/thread_priority.hpp>
+#include <uhd/utils/safe_main.hpp>
+#include <uhd/usrp/multi_usrp.hpp>
+#include <uhd/exception.hpp>
+#include <uhd/usrp/dboard_iface.hpp>
+#include <uhd/usrp/dboard_id.hpp>
+#include <uhd/usrp/dboard_base.hpp>
+#include <uhd/usrp/dboard_manager.hpp>
+#include <boost/program_options.hpp>
+#include <boost/format.hpp>
+#include <boost/thread.hpp>
+#include <iostream>
+#include <fstream>
+#include <csignal>
+#include <complex>
+#include <thread>
+
+
+
+uint32_t value_terminal_count(double sample_rate){
+
+  uint32_t terminal_count;
+  
+  terminal_count= (100e6/sample_rate)-1;
+
+  return terminal_count;
+
+}
+
+int UHD_SAFE_MAIN(int argc, char *argv[]){
+  
+    uhd::set_thread_priority_safe();
+
+    std::string args("addr=192.168.192.1,type=usrp2");//multi uhd device address args
+    std::string file("received_data_sweep0");//name of the file to write binary samples
+    std::string type("fc32");//sample type: double, float, or short
+    std::string ant("RX2");
+    std::string subdev("A:0");
+    std::string ref("internal");
+    std::string wirefmt("sc16");
+    size_t total_num_samps(10000);//total number of samples to receive
+    size_t spb(10000);// samples per buffer
+    double rate(10.0e6);// rate incoming samples
+    double freq(2400.0e6);//RF center Frequency
+    double lo_offset(-1e6);//desired lo_offset
+    double gain(0);//gain of the amplifier
+    double total_time(0.0);//total number of seconds to receive
+    double setup_time(1.0);
+    int fpga_image = 2;
+ 
+    //create a usrp device
+    std::cout << std::endl;
+    std::cout << boost::format("Creating the usrp device with: %s...") % args << std::endl;
+    uhd::usrp::multi_usrp::sptr usrp = uhd::usrp::multi_usrp::make(args);//instantiation of the usrp variable
+
+    //Lock mboard clocks
+    usrp->set_clock_source(ref);
+    
+    
+    //always select the subdevice first, the channel mapping affects the other settings
+    usrp->set_rx_subdev_spec(subdev);
+    std::cout << boost::format("Using Device: %s") % usrp->get_pp_string() << std::endl;
+
+    //set the sample rate
+    std::cout << boost::format("Setting RX Rate: %f Msps...") % (rate/1e6) << std::endl;
+    usrp->set_rx_rate(rate);
+    std::cout << boost::format("Actual RX Rate: %f Msps...") % (usrp->get_rx_rate()/1e6) << std::endl << std::endl;
+
+    // set the terminal count of the FFT_FPGA_image_v2
+    if(fpga_image == 2){
+      uint32_t tc = value_terminal_count(rate);
+      usrp->set_user_register(0,tc,0);
+      std::cout << boost::format("Value for the terminal count selected is: %d")%tc << std::endl << std::endl;
+    }
+    //set the center frequency
+    std::cout << boost::format("Setting RX Freq: %f MHz...") % (freq/1e6) << std::endl << std::endl;
+    uhd::tune_request_t tune_request(freq);
+    tune_request.args = uhd::device_addr_t("mode_n=integer");
+    tune_request.dsp_freq_policy = uhd::tune_request_t::policy_t(int('A'));
+    tune_request.rf_freq_policy = uhd::tune_request_t::policy_t(int('A'));
+    uhd::tune_result_t tune_result=usrp->set_rx_freq(tune_request);
+    
+    std::cout << boost::format("Actual RX Freq: %f MHz...") % (usrp->get_rx_freq()/1e6) << std::endl << std::endl;
+    std::cout << tune_result.to_pp_string()<<std::endl;
+
+    //set the rf gain
+    std::cout << boost::format("Setting RX Gain: %f dB...") % gain << std::endl;
+    usrp->set_rx_gain(gain);
+    std::cout << boost::format("Actual RX Gain: %f dB...") % usrp->get_rx_gain() << std::endl << std::endl;
+
+    //set the antenna
+    usrp->set_rx_antenna(ant);
+
+    boost::this_thread::sleep(boost::posix_time::seconds(setup_time)); //allow for some setup timed
+
+    std::cout << boost::format("Name sensor ")<<usrp->get_rx_sensor_names(1)[0]<<std::endl;
+    std::cout << boost::format("Sensor value ")<<usrp->get_rx_sensor("lo_locked").to_bool()<<std::endl;
+
+
+    //create a receive streamer
+    uhd::stream_args_t stream_args(type,wirefmt);
+    uhd::rx_streamer::sptr rx_stream= usrp->get_rx_stream(stream_args);
+    uhd::rx_metadata_t md;
+    std::vector<std::complex<float>> buff(spb);
+    std::ofstream outfile;
+    //setup streaming
+    uhd::stream_cmd_t stream_cmd(uhd::stream_cmd_t::STREAM_MODE_NUM_SAMPS_AND_DONE);    
+    stream_cmd.num_samps = total_num_samps;
+    stream_cmd.stream_now = false;
+    double timeout=2;
+
+      
+    std::cout << std::endl;
+    std::cout << "Testing control timed command:"<<std::endl;
+    usrp->set_time_now(uhd::time_spec_t(0.0));
+    const uhd::time_spec_t span  = uhd::time_spec_t(1.0);
+    const uhd::time_spec_t delta = uhd::time_spec_t(0.01);
+    const uhd::time_spec_t now = usrp->get_time_now();
+    uhd::time_spec_t cmd_time[6];
+
+    
+    cmd_time[0]= now + uhd::time_spec_t(0.1);
+    cmd_time[1]= cmd_time[0]+delta;
+    cmd_time[2]= cmd_time[0]+span;
+    cmd_time[3]= cmd_time[2]+delta;
+    cmd_time[4]= cmd_time[3]+span;
+    cmd_time[5]= cmd_time[4]+delta;
+    
+    usrp -> set_command_time(cmd_time[0]);
+    tune_result = usrp->set_rx_freq(tune_request);
+    freq=freq+10.0e6;
+    tune_request.target_freq=freq;
+    
+    stream_cmd.time_spec = cmd_time[1]+uhd::time_spec_t(0.1);
+    usrp->set_command_time(cmd_time[1]);
+    rx_stream->issue_stream_cmd(stream_cmd);
+
+    usrp->set_command_time(cmd_time[2]);
+    tune_result = usrp->set_rx_freq(tune_request);
+    freq=freq+10.0e6;
+    tune_request.target_freq=freq;
+
+    stream_cmd.time_spec = cmd_time[3]+uhd::time_spec_t(0.1);
+    usrp->set_command_time(cmd_time[3]);
+    rx_stream->issue_stream_cmd(stream_cmd);
+
+    usrp->set_command_time(cmd_time[4]);
+    tune_result = usrp->set_rx_freq(tune_request);
+    freq=freq+10.0e6;
+    
+    stream_cmd.time_spec = cmd_time[5]+uhd::time_spec_t(0.1);
+    usrp->set_command_time(cmd_time[5]);
+    rx_stream->issue_stream_cmd(stream_cmd);
+
+    for(int i=0 ; i<3;i++){
+      
+      std::cout << boost::format("Num_requested_samples: ")<< total_num_samps << std::endl;        
+      size_t num_rx_samps = rx_stream->recv(&buff.front(), buff.size(), md,timeout, false);//receive the samples
+      std::cout << boost::format("Number of samples received in one packet")<< num_rx_samps << std::endl;
+
+      if (md.error_code == uhd::rx_metadata_t::ERROR_CODE_TIMEOUT) {
+	std::cout << boost::format("Timeout while streaming") << std::endl;
+      }
+      if (md.error_code == uhd::rx_metadata_t::ERROR_CODE_OVERFLOW){
+	std::cerr << boost::format(
+				   "Got an overflow indication. Please consider the following:\n"
+				   "  Your write medium must sustain a rate of %fMB/s.\n"
+				   "  Dropped samples will not be written to the file.\n"
+				   "  Please modify this example for your purposes.\n"
+				   "  This message will not appear again.\n"
+				   ) % (usrp->get_rx_rate()*sizeof(std::complex<float>)/1e6);
+      }
+    
+    
+      if (md.error_code != uhd::rx_metadata_t::ERROR_CODE_NONE){
+	std::string error = str(boost::format("Receiver error: %s") % md.strerror());
+	throw std::runtime_error(error);
+      }
+
+      file=file.substr(0, file.size()-1);
+      file = file + std::to_string(0);
+
+      outfile.open(file.c_str(), std::ofstream::binary); // open in write mode the file
+	
+      outfile.write((const char*)&buff.front(), num_rx_samps*sizeof(std::complex<float>));
+    
+      outfile.close();
+
+    }
+
+    //finished
+    std::cout << std::endl << "Done!" << std::endl << std::endl;
+
+    return EXIT_SUCCESS;
+}

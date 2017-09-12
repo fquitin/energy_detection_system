@@ -1,0 +1,45 @@
+#
+# Copyright 2010-2012 Ettus Research LLC
+#
+
+##################################################
+# CUSTOM Sources
+##################################################
+#CUSTOM_SRCS =$(abspath $(addprefix $(BASE_DIR)/../custom/, \
+#		custom_dsp_rx.v \
+#		/FFT_sq_m_sources/FFT_Sq_mag.v \
+#		/FFT_sq_m_sources/FFD.v \
+#		/FFT_sq_m_sources/data_synchronizer.v \
+#		/FFT_sq_m_sources/FFT.v \
+#	   	/FFT_sq_m_sources/control_unit.v \
+#		/FFT_sq_m_sources/CU_fft_controller.v \
+#		/FFT_sq_m_sources/CU_ram_wr_controller.v \
+#	    	/FFT_sq_m_sources/datapath_fft_controller.v \
+#		/FFT_sq_m_sources/datapath_ram_wr_controller.v \
+#		/FFT_sq_m_sources/fft_controller.v \
+#		/FFT_sq_m_sources/ram_wr_controller.v \
+#		/FFT_sq_m_sources/tff_sync_reset.v \
+#		/FFT_sq_m_sources/square_mag.v))
+
+
+CUSTOM_SRCS =$(abspath $(addprefix $(BASE_DIR)/../custom/, \
+		custom_dsp_rx.v \
+		/ED_sources/ED_USRP.v \
+		/ED_sources/FFD.v \
+		/ED_sources/data_synchronizer.v \
+		/ED_sources/FFT/FFT.v \
+	   	/ED_sources/FFT/control_unit_fft.v \
+		/ED_sources/FFT/CU_fft_controller.v \
+		/ED_sources/FFT/CU_ram_wr_controller.v \
+	    	/ED_sources/FFT/datapath_fft_controller.v \
+		/ED_sources/FFT/datapath_ram_wr_controller.v \
+		/ED_sources/FFT/fft_controller.v \
+		/ED_sources/FFT/ram_wr_controller.v \
+		/ED_sources/FFT/tff_sync_reset.v \
+		/ED_sources/Square_Mag/square_mag.v \
+		/ED_sources/Energy_Detection/control_unit_detection.v \
+		/ED_sources/Energy_Detection/control_unit_ed.v\
+		/ED_sources/Energy_Detection/control_unit_packing.v\
+		/ED_sources/Energy_Detection/datapath_unit_ed.v\
+		/ED_sources/Energy_Detection/energy_detection_module.v\
+		/ED_sources/Energy_Detection/FFD_en.v))

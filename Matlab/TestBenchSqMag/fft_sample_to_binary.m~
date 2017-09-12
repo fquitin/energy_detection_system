@@ -1,0 +1,34 @@
+clc
+clear all
+close all
+
+addpath('/home/beams/repos/thesis_ulb/Matlab_scripts/matlab_utils-master')
+
+filename = '/home/beams/repos/thesis_ulb/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_multi_sig_Bluethoot_std_fc_100M_fs_10M_fft_image_v1.dat';
+
+Y=read_complex_binary(filename);  %complex signal read from the file
+Y=Y';
+
+%% Discretizing samples for the testbench
+nb=16;
+
+Y_re= floor(real(Y)*2^(nb-1));
+idy = find(Y_re == 2^(nb-1));
+Y_re(idy,1) = 2^(nb-1)-1;
+
+Y_im = floor(imag(Y)*2^(nb-1));
+idy = find(Y_im == 2^(nb-1));
+Y_im(idy) = 2^(nb-1)-1;
+
+Y_sq_m = Y_re.*Y_re + Y_im.*Y_im;
+
+%% Save samples in txt file
+fp = fopen('samples_binary.txt','w');
+for(i=1:1:7000)
+    fprintf(fp,'%d,%d\n',Y_re(1,i),Y_im(1,i));
+end
+fclose(fp);
+
+fp = fopen('results_binary_matlab.txt','w');
+fprintf(fp,'%d\n',Y_sq_m);
+fclose(fp);

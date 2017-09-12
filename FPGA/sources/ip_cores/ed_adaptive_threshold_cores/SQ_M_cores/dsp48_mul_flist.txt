@@ -1,0 +1,15 @@
+# Output products list for <dsp48_mul>
+_xmsgs/pn_parser.xmsgs
+dsp48_mul.asy
+dsp48_mul.gise
+dsp48_mul.ngc
+dsp48_mul.sym
+dsp48_mul.v
+dsp48_mul.veo
+dsp48_mul.vhd
+dsp48_mul.vho
+dsp48_mul.xco
+dsp48_mul.xise
+dsp48_mul_flist.txt
+dsp48_mul_readme.txt
+dsp48_mul_xmdf.tcl

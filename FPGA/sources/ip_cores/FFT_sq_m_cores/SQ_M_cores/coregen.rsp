@@ -1,0 +1,2 @@
+SETPROJECT "/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/coregen.cgp"
+LAUNCHXCO "/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/add.xco"

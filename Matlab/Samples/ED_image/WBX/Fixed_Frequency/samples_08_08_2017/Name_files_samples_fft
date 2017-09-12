@@ -1,0 +1,63 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_signal_GSM_std_fc_400M_fs_10M_v1.dat
+Sample Frequency: 10M
+Central Frequency: 400Mhz
+Signal Type: GSM standard 402Mhz
+OutputGain: -20dbm
+GainAmplifier: 0db 
+Threshold: 3288
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_signal_GSM_std_fc_400M_fs_10M_v2.dat
+Sample Frequency: 10M
+Central Frequency: 400Mhz
+Signal Type: GSM standard 402Mhz
+OutputGain: -30dbm
+GainAmplifier: 0db 
+Threshold: 3288
+
+*******************************************************
+*******************************************************
+Name:sampled_data_signal_GSM_std_fc_400M_fs_10M_v3.dat
+Sample Frequency: 10M
+Central Frequency: 400Mhz
+Signal Type: GSM standard 402Mhz
+OutputGain: -40dbm
+GainAmplifier: 0db 
+Threshold: 3288
+
+*******************************************************
+*******************************************************
+Name:sampled_data_signal_GSM_std_fc_400M_fs_10M_v4.dat
+Sample Frequency: 10M
+Central Frequency: 400Mhz
+Signal Type: GSM standard 402Mhz
+OutputGain: -50dbm
+GainAmplifier: 0db 
+Threshold: 3288
+
+*******************************************************
+*******************************************************
+Name:sampled_data_signal_GSM_std_fc_400M_fs_10M_v5.dat
+Sample Frequency: 10M
+Central Frequency: 400Mhz
+Signal Type: GSM standard 402Mhz
+OutputGain: -60dbm
+GainAmplifier: 0db 
+Threshold: 3288
+
+*******************************************************
+

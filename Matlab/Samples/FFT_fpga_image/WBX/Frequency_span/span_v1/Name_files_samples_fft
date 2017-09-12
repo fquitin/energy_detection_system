@@ -1,0 +1,28 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_900M_fs_10M_fft_image_v2
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: Bluethoot standard at 903Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_910M_fs_10M_fft_image_v2
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: Bluethoot standard at 912Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************

@@ -1,0 +1,39 @@
+##############################################################
+##############################################################
+##############################################################
+SET designentry = Verilog
+SET BusFormat = BusFormatAngleBracketNotRipped
+SET devicefamily = spartan3adsp
+SET device = xc3sd3400a
+SET package = cs484
+SET speedgrade = -5
+SET FlowVendor = Foundation_ISE
+SET VerilogSim = True
+SET VHDLSim = True
+SELECT Adder_Subtracter family Xilinx,_Inc. 11.0
+CSET a_type=Signed
+CSET a_width=32
+CSET add_mode=Add
+CSET ainit_value=0
+CSET b_constant=false
+CSET b_type=Signed
+CSET b_value=00000000000000000000000000000000
+CSET b_width=32
+CSET borrow_sense=Active_Low
+CSET bypass=false
+CSET bypass_ce_priority=CE_Overrides_Bypass
+CSET bypass_sense=Active_High
+CSET c_in=false
+CSET c_out=false
+CSET ce=true
+CSET component_name=add
+CSET implementation=DSP48
+CSET latency=2
+CSET latency_configuration=Automatic
+CSET out_width=32
+CSET sclr=true
+CSET sinit=false
+CSET sinit_value=0
+CSET sset=false
+CSET sync_ce_priority=Sync_Overrides_CE
+CSET sync_ctrl_priority=Reset_Overrides_Set

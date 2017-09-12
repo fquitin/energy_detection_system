@@ -1,0 +1,41 @@
+#
+# Copyright 2010 Ettus Research LLC
+#
+
+##################################################
+# Coregen Sources
+##################################################
+#COREGEN_SRCS = $(abspath $(addprefix $(BASE_DIR)/../coregen/, \
+fifo_xlnx_2Kx36_2clk.v \
+fifo_xlnx_2Kx36_2clk.xco \
+fifo_xlnx_512x36_2clk.v \
+fifo_xlnx_512x36_2clk.xco \
+fifo_xlnx_64x36_2clk.v \
+fifo_xlnx_64x36_2clk.xco \
+fifo_xlnx_16x19_2clk.v \
+fifo_xlnx_16x19_2clk.xco \
+fifo_xlnx_16x40_2clk.v \
+fifo_xlnx_16x40_2clk.xco \
+fifo_xlnx_32x36_2clk.v \
+fifo_xlnx_32x36_2clk.xco \
+fifo_xlnx_512x36_2clk_36to18.v \
+fifo_xlnx_512x36_2clk_36to18.xco \
+fifo_xlnx_512x36_2clk_18to36.v \
+fifo_xlnx_512x36_2clk_18to36.xco \
+fifo_xlnx_512x36_2clk_prog_full.v \
+fifo_xlnx_512x36_2clk_prog_full.xco \
+/FFT_cores/counter_mod_16.v \
+/FFT_cores/counter_mod_16.xco \
+/FFT_cores/counter_mod_10.v \
+/FFT_cores/counter_mod_10.xco \
+/FFT_cores/RAM_SP.v \
+/FFT_cores/RAM_SP.xco \
+/FFT_cores/fifo_generator_v6_2.v \
+/FFT_cores/fifo_generator_v6_2.xco \
+/FFT_cores/xfft_v7_1_ip_core.v \
+/FFT_cores/xfft_v7_1_ip_core.xco \
+/FFT_cores/dsp48_mul.v \
+/FFT_cores/dsp48_mul.xco \
+/FFT_cores/add.v \
+/FFT_cores/add.xco))
+

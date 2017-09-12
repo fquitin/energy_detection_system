@@ -1,0 +1,17 @@
+# Output products list for <counter_mod_4>
+_xmsgs/pn_parser.xmsgs
+core_resources.txt
+counter_mod_4.asy
+counter_mod_4.gise
+counter_mod_4.ngc
+counter_mod_4.sym
+counter_mod_4.v
+counter_mod_4.veo
+counter_mod_4.vhd
+counter_mod_4.vho
+counter_mod_4.xco
+counter_mod_4.xise
+counter_mod_4_flist.txt
+counter_mod_4_readme.txt
+counter_mod_4_xmdf.tcl
+gui_latency.txt

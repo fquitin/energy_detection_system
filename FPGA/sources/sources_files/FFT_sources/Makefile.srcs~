@@ -1,0 +1,24 @@
+#
+# Copyright 2010-2012 Ettus Research LLC
+#
+
+##################################################
+# CUSTOM Sources				 #
+##################################################
+CUSTOM_SRCS =$(abspath $(addprefix $(BASE_DIR)/../custom/, \
+		custom_dsp_rx.v \
+		/FFT_sources/FFT_Sq_mag.v \
+		/FFT_sources/FFD.v \
+		/FFT_sources/data_synchronizer.v \
+		/FFT_sources/FFT.v \
+	   	/FFT_sources/control_unit.v \
+		/FFT_sources/CU_fft_controller.v \
+		/FFT_sources/CU_ram_wr_controller.v \
+	    	/FFT_sources/datapath_fft_controller.v \
+		/FFT_sources/datapath_ram_wr_controller.v \
+		/FFT_sources/fft_controller.v \
+		/FFT_sources/ram_wr_controller.v \
+		/FFT_sources/tff_sync_reset.v))
+
+
+

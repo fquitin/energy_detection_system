@@ -1,0 +1,63 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_no_sig_fc_400M_fs_10M_v1.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: -
+OutputGain: -
+GainAmplifier: 0db
+Threshold: 200
+*******************************************************
+
+*******************************************************
+Name:sampled_data_sig_Bluethoot_std_fc_400M_fs_10M_v2.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 400Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+Threshold: 1000
+*******************************************************
+
+*******************************************************
+Name:sampled_data_mult_sig_Bluethoot_std_fc_400M_fs_10M_v1.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+Threshold: 1000
+*******************************************************
+
+*******************************************************
+Name:sampled_data_sig_Bluethoot_std_fc_2_2G_fs_10M_v1.dat
+Sample Frequency: 10M
+Central Frequency: 2.2Ghz
+Signal Type: Bluethoot standard at 2.2Ghz
+OutputGain: -28dbm
+GainAmplifier: 38db max gain
+Threshold: 1000
+Transmitting with antenna connected to the signal generator
+*******************************************************
+
+*******************************************************
+Name:sampled_data_mult_sig_Bluethoot_std_fc_400M_fs_10M_v2.dat
+Sample Frequency: 10M
+Central Frequency: 2.2Ghz
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -28dbm
+GainAmplifier: 38db max gain
+Threshold: 1000
+Transmitting with antenna connected to the signal generator
+*******************************************************
+

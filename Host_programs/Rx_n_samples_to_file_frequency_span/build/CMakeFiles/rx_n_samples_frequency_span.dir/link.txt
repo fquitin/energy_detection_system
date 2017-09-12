@@ -1,0 +1,1 @@
+/usr/bin/c++   --std=gnu++11  -O3 -DNDEBUG    CMakeFiles/rx_n_samples_frequency_span.dir/rx_n_samples_frequency_span.cpp.o  -o rx_n_samples_frequency_span -rdynamic /usr/local/lib/libuhd.so -lboost_program_options -lboost_system -lboost_thread -lboost_iostreams -lboost_filesystem -lpthread -Wl,-rpath,/usr/local/lib 

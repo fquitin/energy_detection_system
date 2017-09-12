@@ -1,0 +1,66 @@
+##############################################################
+#
+# Xilinx Core Generator version 12.2
+# Date: Wed Jul 26 08:45:17 2017
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = VHDL
+SET device = xc3sd3400a
+SET devicefamily = spartan3adsp
+SET flowvendor = Foundation_ISE
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = cs484
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -5
+SET verilogsim = true
+SET vhdlsim = true
+# END Project Options
+# BEGIN Select
+SELECT Adder_Subtracter family Xilinx,_Inc. 11.0
+# END Select
+# BEGIN Parameters
+CSET a_type=Signed
+CSET a_width=32
+CSET add_mode=Add
+CSET ainit_value=0
+CSET b_constant=false
+CSET b_type=Signed
+CSET b_value=00000000000000000000000000000000
+CSET b_width=32
+CSET borrow_sense=Active_Low
+CSET bypass=false
+CSET bypass_ce_priority=CE_Overrides_Bypass
+CSET bypass_sense=Active_High
+CSET c_in=false
+CSET c_out=false
+CSET ce=true
+CSET component_name=add
+CSET implementation=DSP48
+CSET latency=2
+CSET latency_configuration=Automatic
+CSET out_width=32
+CSET sclr=true
+CSET sinit=false
+CSET sinit_value=0
+CSET sset=false
+CSET sync_ce_priority=Sync_Overrides_CE
+CSET sync_ctrl_priority=Reset_Overrides_Set
+# END Parameters
+GENERATE
+# CRC: c26ee7b7

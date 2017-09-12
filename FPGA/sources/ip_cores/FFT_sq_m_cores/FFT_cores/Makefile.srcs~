@@ -1,0 +1,29 @@
+#
+# Copyright 2010 Ettus Research LLC
+#
+##################################################
+# Coregen Sources
+##################################################
+#COREGEN_SRCS = $(abspath $(addprefix $(BASE_DIR)/../coregen/, \
+/FFT_cores/counter_mod_16.v \
+/FFT_cores/counter_mod_16.xco \
+/FFT_cores/counter_mod_10.v \
+/FFT_cores/counter_mod_10.xco \
+/FFT_cores/RAM_SP.v \
+/FFT_cores/RAM_SP.xco \
+/FFT_cores/fifo_generator_v6_2.v \
+/FFT_cores/fifo_generator_v6_2.xco \
+/FFT_cores/xfft_v7_1_ip_core.v \
+/FFT_cores/xfft_v7_1_ip_core.xco \
+/SQ_M_cores/dsp48_mul.v \
+/SQ_M_cores/dsp48_mul.xco \
+/SQ_M_cores/add.v \
+/SQ_M_cores/add.xco \
+/ED_cores/acc_sub.v \
+/ED_cores/acc_sub.xco \
+/ED_cores/counter_mod_3.v \
+/ED_cores/counter_mod_3.xco \
+/ED_cores/fifo_s16.v \
+/ED_cores/fifo_s16.xco \
+/ED_cores/fifo_s20.v \
+/ED_cores/fifo_s20.xco))

@@ -1,0 +1,18 @@
+set term wxt 0 
+ while(1){ 
+ set multiplot layout 2, 1 title "Energy Detection Frequency span" font ",14" 
+ set tmargin 2 
+ set title "|Y|²" 
+ unset key 
+ set xrange [1.795e+09:1.895e+09]
+ set format y "%e" 
+ set yrange [-0.1:5]
+ plot "SQM.dat" binary format="%lf"  with points title 'SQM'
+ set title "Detection" 
+ unset key
+ set xrange [1.795e+09:1.895e+09]
+ set yrange [-0.1:1.1]
+ plot "Detection.dat" binary format="%lf"  with lines title 'DETECTION'
+ unset multiplot
+ pause 1
+}

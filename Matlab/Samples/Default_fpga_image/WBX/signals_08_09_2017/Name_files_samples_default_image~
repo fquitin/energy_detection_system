@@ -1,0 +1,37 @@
+Template
+*******************************************************
+
+Name:sampled_data_signal_xx_fc_100M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+Notes:
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_signal_GSM_std_fc_402M_fs_10M_v1
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: GSM standard signal
+OutputGain: -20dbm
+Gain:0db
+Power_measured:-36dbm (spectrum analyser)
+Notes:
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_signal_GSM_std_fc_402M_fs_10M_v2
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: GSM standard signal
+OutputGain: -30dbm
+Gain:0db
+Power_measured:-36dbm (spectrum analyser)
+Notes:
+
+*******************************************************

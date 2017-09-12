@@ -1,0 +1,16 @@
+# Output products list for <fifo_s1024>
+_xmsgs/pn_parser.xmsgs
+fifo_generator_readme.txt
+fifo_generator_ug175.pdf
+fifo_s1024.asy
+fifo_s1024.gise
+fifo_s1024.ngc
+fifo_s1024.sym
+fifo_s1024.v
+fifo_s1024.veo
+fifo_s1024.vhd
+fifo_s1024.vho
+fifo_s1024.xco
+fifo_s1024.xise
+fifo_s1024_flist.txt
+fifo_s1024_xmdf.tcl

@@ -1,0 +1,37 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_carrier_fc_900M_fs_10M_fft_image_v2
+Sample Frequency: 10M
+Central Frequency: 900M
+Signal Type: multicarrier 3
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_carrier_fc_910M_fs_10M_fft_image_v2
+Sample Frequency: 10M
+Central Frequency: 910M
+Signal Type: multicarrier 10
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_carrier_std_fc_920M_fs_10M_fft_image_v2
+Sample Frequency: 10M
+Central Frequency: 920M
+Signal Type: multicarrier 3
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************

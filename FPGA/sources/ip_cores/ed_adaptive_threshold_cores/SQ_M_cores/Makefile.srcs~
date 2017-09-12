@@ -1,0 +1,12 @@
+#
+# Copyright 2010 Ettus Research LLC
+#
+##################################################
+# Coregen Sources
+##################################################
+#COREGEN_SRCS = $(abspath $(addprefix $(BASE_DIR)/../coregen/, \
+/dsp48_mul.v \
+/dsp48_mul.xco \
+/add.v \
+/add.xco \
+))

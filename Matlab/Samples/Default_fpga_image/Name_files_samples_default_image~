@@ -1,0 +1,156 @@
+Template
+*******************************************************
+
+Name:sampled_data_signal_xx_fc_100M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+Notes:
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_sig_multi_carrier_1Mspacing_fc_100M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: multi carrier signal, 3 carriers, spacing 1Mhz
+OutputGain: -30dbm
+Notes:
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_sig_multi_carrier_20_200kspacing_fc_100M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: multi carrier 20, 200khz of spacing
+OutputGain: -30dBm
+Notes: odd carrier are -20dB less than the others
+
+*******************************************************
+
+Name:sampled_data_sig_multi_carrier_1Mspacing_fc_100M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: multi carrier 8, 1Mhz of spacing
+OutputGain: -25dBm
+
+*******************************************************
+*******************************************************
+
+Name:sampled_data_noise_fc_100M_fs_10M_default_image
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+GainAmplifier: 0db
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_noise_fc_100M_fs_10M_default_image_v2
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+GainAmplifier: 2db
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_noise_fc_100M_fs_10M_default_image_v3
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+GainAmplifier: 5db
+
+*******************************************************
+*******************************************************
+
+Name:sampled_data_noise_fc_100M_fs_10M_default_image_v4
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+GainAmplifier: 10db -> 6.5dB
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_multi_sig_Tetra_std_fc_100M_fs_10M_default_image
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: Tetra standard, 2 signals: one at 97Mhz and one at 102Mhz
+OutputGain: -28dbm
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_multi_sig_Bluethoot_std_fc_100M_fs_10M_default_image
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: Bluethoot standard, 2 signals: one at 97Mhz and one at 102Mhz
+OutputGain: -28dbm
+AmplifierGain: 0db
+
+*******************************************************
+
+
+*******************************************************
+
+Name:sampled_data_multi_sig_Bluethoot_std_fc_100M_fs_10M_default_image_v2
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: Bluethoot standard, 2 signals: one at 97Mhz and one at 102Mhz
+OutputGain: -28dbm
+AmplifierGain: 5db
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_multi_sig_Bluethoot_std_fc_100M_fs_10M_default_image_v3
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: Bluethoot standard, 2 signals: one at 97Mhz and one at 102Mhz
+OutputGain: -28dbm
+AmplifierGain: 10db -> 6.5db maximum value
+
+*******************************************************
+*******************************************************
+
+Name:sampled_data_multi_sig_Bluethoot_std_fc_100M_fs_10M_default_image_v4
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: Bluethoot standard, 2 signals: one at 97Mhz and one at 102Mhz
+OutputGain: -28dbm
+AmplifierGain: 2db 
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_signal_noise_wbx_fc_400M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: 
+OutputGain: 
+Notes:
+
+*******************************************************
+
+*******************************************************
+
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_default_image
+Sample Frequency: 10M
+Central Frequency: 100M
+Signal Type: Bluethoot standard, 2 signals: one at 401Mhz and one at 397Mhz
+OutputGain: -28dbm
+AmplifierGain: 0db 
+*******************************************************

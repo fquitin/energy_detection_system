@@ -1,0 +1,9 @@
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="./fpga_default_image.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="./fft_image.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="./fft_sq_m_image.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="./ed_fixed_threshold_image.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="./ed_adaptive_threshold_image.bin"

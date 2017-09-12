@@ -1,0 +1,21 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_carrier_fc_400M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: 16 carries centered at 400 M
+OutputGain: -28dbm
+GainAmplifier: 38db
+*******************************************************
+
+

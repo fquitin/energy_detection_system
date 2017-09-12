@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2095" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/c_addsub_v11_0/c_addsub_pkg_v11_0.vhd</arg>&quot; line <arg fmt="%d" index="2">760</arg>: Size of operands are different : result is &lt;true&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1749" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/c_addsub_v11_0/c_addsub_pkg_v11_0.vhd</arg>&quot; line <arg fmt="%d" index="2">805</arg>: <arg fmt="%s" index="3">warning</arg>: <arg fmt="%s" index="4">WARNING - addsub: c_out_width may be larger than necessary or too small to accommodate bit growth - see data sheet for allowable values (System generator pads inputs to allow smaller c_out_widths than would otherwise be acceptable)</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1694</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1694</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2095" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/c_addsub_v11_0/c_addsub_pkg_v11_0.vhd</arg>&quot; line <arg fmt="%d" index="2">760</arg>: Size of operands are different : result is &lt;true&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1749" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/c_addsub_v11_0/c_addsub_pkg_v11_0.vhd</arg>&quot; line <arg fmt="%d" index="2">805</arg>: <arg fmt="%s" index="3">warning</arg>: <arg fmt="%s" index="4">WARNING - addsub: c_out_width may be larger than necessary or too small to accommodate bit growth - see data sheet for allowable values (System generator pads inputs to allow smaller c_out_widths than would otherwise be acceptable)</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1694</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/c_addsub_v11_0/c_addsub_v11_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">444</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">SCLR</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_pipe_v2_0_xst</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/c_addsub_v11_0/c_addsub_v11_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">444</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">SINIT</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_pipe_v2_0_xst</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">PCIN</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">ACIN</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">BCIN</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PCOUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ACOUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">BCOUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CARRYOUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_addsub_v2_0/xbip_addsub_v2_0_xst.vhd</arg>&quot; line <arg fmt="%d" index="2">174</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CARRYCASCOUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">xbip_dsp48_addsub_v2_0_xst</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1694</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1700</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="old" >&quot;<arg fmt="%s" index="1">/home/beams/repos/thesis_ulb/FPGA_ISE/Square_Mag/square_mag_v1/ipcore_dir/./tmp/_cg/_bbx/xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd</arg>&quot; line <arg fmt="%d" index="2">1706</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">sinit_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sclr_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">pipe&lt;0&gt;&lt;0&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CARRYIN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">rstm_i</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">rstcarryin_i</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">cem_i</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">cecarryin_i</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">carryin_i</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ACIN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">CARRYOUT</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">BCIN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">ACOUT</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">diag_pipe</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">qi&lt;47:33&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SINIT</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">BYPASS</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SSET</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">C_IN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">i_out1&lt;32&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">i_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">i_C_OUT</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">diag_resources.luts</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">diag_resources.ffs</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">diag_resources.dsp48</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">diag_resources.bram18k</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">diag_latency.used</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">diag_latency.pipe</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">b_internal_ze</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">add_delay</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">a_internal_ze</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">xbip_addsub.i_a_b_nogrowth.i_add_pipe</arg>&gt; of the block &lt;<arg fmt="%s" index="2">xbip_pipe_v2_0_xst</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">c_addsub_v11_0_xst</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

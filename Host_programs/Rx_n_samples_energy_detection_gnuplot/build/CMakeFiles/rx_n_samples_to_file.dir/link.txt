@@ -1,0 +1,1 @@
+/usr/bin/c++   --std=gnu++11  -O3 -DNDEBUG    CMakeFiles/rx_n_samples_to_file.dir/rx_n_samples_to_file.cpp.o  -o rx_n_samples_to_file -rdynamic /usr/local/lib/libuhd.so -lboost_program_options -lboost_system -lboost_thread -lboost_iostreams -lboost_filesystem -lpthread -Wl,-rpath,/usr/local/lib 

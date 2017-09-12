@@ -1,0 +1,9 @@
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="/home/beams/FPGA_custom_image/fpga_default_image.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="/home/beams/FPGA_custom_image/fft_module_image_v2_9_06_2017.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="/home/beams/FPGA_custom_image/fft_sq_m_module_image_v2_27_07_2017.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="/home/beams/FPGA_custom_image/ed_module_image_v2_18_08_2017.bin"
+
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="/home/beams/FPGA_custom_image/ed_advanced_module_image_v3_14_08_2017.bin"

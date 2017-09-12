@@ -1,0 +1,17 @@
+# Output products list for <av_accumulator>
+_xmsgs/pn_parser.xmsgs
+av_accumulator.asy
+av_accumulator.gise
+av_accumulator.ngc
+av_accumulator.sym
+av_accumulator.v
+av_accumulator.veo
+av_accumulator.vhd
+av_accumulator.vho
+av_accumulator.xco
+av_accumulator.xise
+av_accumulator_flist.txt
+av_accumulator_readme.txt
+av_accumulator_xmdf.tcl
+core_resources.txt
+gui_latency.txt

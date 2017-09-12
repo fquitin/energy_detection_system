@@ -1,0 +1,22 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_WCDMA_3GPP_sig_carrier_fc_700M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: 700Mhz WCDMA_3GPP signal
+OutputGain: -40DBM
+GainAmplifier: 20db
+Threshold:3888
+*******************************************************
+
+

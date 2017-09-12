@@ -1,0 +1,40 @@
+
+Creating the usrp device with: addr=192.168.192.1,type=usrp2...
+Using Device: Single USRP:
+  Device: USRP2 / N-Series Device
+  Mboard 0: N210r4
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: WBXv4 RX+GDB
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: WBXv4 TX+GDB
+
+Setting RX Rate: 10.000000 Msps...
+Actual RX Rate: 10.000000 Msps...
+
+Value for the terminal count selected is: 9
+
+Setting RX Gain: 20.000000 dB...
+Actual RX Gain: 20.000000 dB...
+
+Name sensor lo_locked
+Sensor value 0
+Setting RX Freq: 60.000000 MHz...
+
+Tune Result:
+    Target RF  Freq: 60.000000 (MHz)
+    Actual RF  Freq: 60.156250 (MHz)
+    Target DSP Freq: 0.156250 (MHz)
+    Actual DSP Freq: 0.156250 (MHz)
+
+
+Timed commands started ...
+116
+193
+170
+161
+132
+110

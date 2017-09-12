@@ -1,0 +1,16 @@
+# Output products list for <RAM_SP>
+RAM_SP.asy
+RAM_SP.gise
+RAM_SP.ngc
+RAM_SP.sym
+RAM_SP.v
+RAM_SP.veo
+RAM_SP.vhd
+RAM_SP.vho
+RAM_SP.xco
+RAM_SP.xise
+RAM_SP_flist.txt
+RAM_SP_xmdf.tcl
+_xmsgs/pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

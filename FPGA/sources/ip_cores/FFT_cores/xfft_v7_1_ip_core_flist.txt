@@ -1,0 +1,15 @@
+# Output products list for <xfft_v7_1_ip_core>
+_xmsgs/pn_parser.xmsgs
+xfft_v7_1_ip_core.asy
+xfft_v7_1_ip_core.gise
+xfft_v7_1_ip_core.ngc
+xfft_v7_1_ip_core.sym
+xfft_v7_1_ip_core.v
+xfft_v7_1_ip_core.veo
+xfft_v7_1_ip_core.vhd
+xfft_v7_1_ip_core.vho
+xfft_v7_1_ip_core.xco
+xfft_v7_1_ip_core.xise
+xfft_v7_1_ip_core_flist.txt
+xfft_v7_1_ip_core_readme.txt
+xfft_v7_1_ip_core_xmdf.tcl

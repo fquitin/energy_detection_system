@@ -1,0 +1,57 @@
+==========================================
+
+How to customize Ettus Research USRP (Model N210) FPGA
+
+==========================================
+
+
+1- Put all the verilog files created inside the uhd/fpga-src/usrp2/custom folder without the ip cores files
+
+2- Create a Makefile.srcs inside this folder with the sources that you have to include as following :
+
+	##################################################
+	# CUSTOM Sources
+	##################################################
+	CUSTOM_SRCS =$(abspath $(addprefix $(BASE_DIR)/../custom/, \
+	    custom_dsp_xx.v \
+	    my_verilog_file.v))
+
+3- Change folder to uhd/pga-src/usrp2/coregen
+
+4- Add inside the uhd/fpga-src/usrp2/coregen folder all files created by Xilinx for your ip cores (.asy .gise .ucf .v .veo .xco .xdc .xise .ncf .txt .tcl)
+
+5- Add to the Makefile.srcs inside the uhd/fpga-src/usrp2/coregen folder the sources of ip cores added previously: my_ip_core.v and my_ip_core.xco
+
+6- Change folder to uhd/fpga-src/usrp2/top/N2x0/
+
+7- Add to the File Makefile.srcs this include row after the last one : include ../../custom/Makefile.srcs
+
+8- Comment CUSTOM_SCR and leave white the field CUSTOM_DEF
+
+9- Include the custom module inside the chain preferred modifying the VerilogMacros line as following: 
+	
+	"Verilog Macros" "LVDS=1 |RX_DSP0_MODULE=custom_dsp_rx | other chain path |$(CUSTOM_DEFS)" 
+
+	Where the RX_DSP0_MODULE in case on receiver path 0. 
+	Other chain paths: (X = 0,1)
+	-TX_ENG<X>_MODULE
+    	-RX_ENG<X>_MODULE
+    	-RX_DSP<X>_MODULE
+    	-TX_DSP<X>_MODULE
+
+10- Create the folder for build (name: build-N210R4) inside the uhd/fpga-src/usrp2/top/N2x0/ folder 
+
+10- Run these command to compile:
+
+	cd /opt/Xilinx/12.2/ISE_DS/
+	source ./settings64.sh 
+	cd <path>/uhd/fpga-src/usrp2/top/N2x0/
+	make -f Makefile.N210R4 bin | tee logfile
+
+11- Change the name of the u2plus.bin to my_fpga_image.bin inside the /build-N210R4 folder
+
+12- Download the image built into the FPGA using the follow command by terminal:
+
+	uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="<path>/my_fpga_image.bin"
+
+

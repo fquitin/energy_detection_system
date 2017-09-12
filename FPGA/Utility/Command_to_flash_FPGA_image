@@ -1,0 +1,2 @@
+uhd_image_loader --args="type=usrp2,addr=192.168.192.1,reset" --no-fw  --fpga-path="/home/beams/FPGA_custom_image/my_fir_fpga_image.bin"
+

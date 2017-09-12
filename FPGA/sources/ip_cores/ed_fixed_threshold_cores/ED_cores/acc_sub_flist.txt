@@ -1,0 +1,17 @@
+# Output products list for <acc_sub>
+_xmsgs/pn_parser.xmsgs
+acc_sub.asy
+acc_sub.gise
+acc_sub.ngc
+acc_sub.sym
+acc_sub.v
+acc_sub.veo
+acc_sub.vhd
+acc_sub.vho
+acc_sub.xco
+acc_sub.xise
+acc_sub_flist.txt
+acc_sub_readme.txt
+acc_sub_xmdf.tcl
+core_resources.txt
+gui_latency.txt

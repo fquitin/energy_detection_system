@@ -1,0 +1,22 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_GSM_Bluethoot_fc_700M_fs_10M
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: GSM 700 Bluethoot 703
+OutputGain: 40dbm
+GainAmplifier: 0db
+Threshold:3288
+*******************************************************
+
+

@@ -1,0 +1,83 @@
+Template
+*******************************************************
+
+Name:
+Sample Frequency: 
+Central Frequency: 
+Signal Type: 
+OutputGain: 
+
+*******************************************************
+
+*******************************************************
+Name:sampled_data_sig_Bluethoot_std_fc_400M_fs_10M_v1.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 400Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_sig_Bluethoot_std_fc_400M_fs_10M_v2.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 400Mhz
+OutputGain: -40dbm
+GainAmplifier: 0db
+*******************************************************
+
+
+*******************************************************
+Name:sampled_data_sig_Bluethoot_std_fc_400M_fs_10M_v3.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 400Mhz
+OutputGain: -60dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_sig_Bluethoot_std_fc_400M_fs_10M_v4.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 400Mhz
+OutputGain: -60dbm
+GainAmplifier: 10db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_v1.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -28dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_v2.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -40dbm
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_v3.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -40dbm 402Mhz and -50dbm 397Mhz
+GainAmplifier: 0db
+*******************************************************
+
+*******************************************************
+Name:sampled_data_multi_sig_Bluethoot_std_fc_400M_fs_10M_v4.dat
+Sample Frequency: 10M
+Central Frequency: 400M
+Signal Type: Bluethoot standard at 402Mhz and 397Mhz
+OutputGain: -40dbm 402Mhz and -50dbm 397Mhz
+GainAmplifier: 10db
+*******************************************************

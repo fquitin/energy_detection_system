@@ -1,0 +1,36 @@
+##############################################################
+##############################################################
+##############################################################
+SET designentry = Verilog
+SET BusFormat = BusFormatAngleBracketNotRipped
+SET devicefamily = spartan3adsp
+SET device = xc3sd3400a
+SET package = cs484
+SET speedgrade = -5
+SET FlowVendor = Foundation_ISE
+SET VerilogSim = True
+SET VHDLSim = True
+SELECT Binary_Counter family Xilinx,_Inc. 11.0
+CSET ainit_value=0
+CSET ce=true
+CSET component_name=counter_mod_10
+CSET count_mode=UP
+CSET fb_latency=0
+CSET fb_latency_configuration=Manual
+CSET final_count_value=1
+CSET implementation=Fabric
+CSET increment_value=1
+CSET latency=1
+CSET latency_configuration=Manual
+CSET load=false
+CSET load_sense=Active_High
+CSET output_width=10
+CSET restrict_count=false
+CSET sclr=true
+CSET sinit=false
+CSET sinit_value=0
+CSET sset=false
+CSET sync_ce_priority=Sync_Overrides_CE
+CSET sync_threshold_output=false
+CSET syncctrlpriority=Reset_Overrides_Set
+CSET threshold_value=1

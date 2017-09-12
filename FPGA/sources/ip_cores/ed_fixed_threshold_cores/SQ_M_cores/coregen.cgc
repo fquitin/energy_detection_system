@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xilinx="http://www.xilinx.com" >
+   <spirit:vendor>xilinx.com</spirit:vendor>
+   <spirit:library>project</spirit:library>
+   <spirit:name>coregen</spirit:name>
+   <spirit:version>1.0</spirit:version>
+   <spirit:componentInstances>
+      <spirit:componentInstance>
+         <spirit:instanceName>add</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="c_addsub" spirit:version="11.0" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_b_width">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_bypass_ce_priority">CE_Overrides_Bypass</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_a_width">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_ce">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_borrow_sense">Active_Low</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_c_out">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_ainit_value">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_b_constant">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_bypass">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_implementation">DSP48</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_bypass_sense">Active_High</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_a_type">Unsigned</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_latency">2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_b_value">00000000000000000000000000000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sync_ce_priority">Sync_Overrides_CE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_add_mode">Add</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_b_type">Unsigned</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sclr">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_c_in">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sync_ctrl_priority">Reset_Overrides_Set</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_latency_configuration">Automatic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sinit_value">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sinit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_out_width">32</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc3sd3400a</xilinx:device>
+               <xilinx:deviceFamily>spartan3adsp</xilinx:deviceFamily>
+               <xilinx:package>cs484</xilinx:package>
+               <xilinx:speedGrade>-5</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>Verilog</xilinx:designEntry>
+               <xilinx:asySymbol>true</xilinx:asySymbol>
+               <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+         <spirit:instanceName>dsp48_mul</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="xbip_dsp48_macro" spirit:version="2.0" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_b_width">16</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_a_width">16</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_bcout">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_concat_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_carryout">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_show_filtered">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_b_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_preg_6">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_concat_width">48</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tier_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tier_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tier_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tier_4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tier_5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tier_6">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_gui_behaviour">Coregen</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_areg_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_areg_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_areg_3">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_areg_4">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pipeline_options">Automatic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_pcout">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_dsp48">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_output_properties">Full_Precision</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pcin_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_breg_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_breg_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_p_width">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_breg_3">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_breg_4">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_concatreg_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_c_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_concatreg_4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_concatreg_5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_opreg_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_opreg_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_opreg_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_opreg_4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_opreg_5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_carrycascout">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mreg_5">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_p_full_width">32</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_creg_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_creg_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_creg_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_creg_4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_creg_5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_p_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction1">A*B</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction_list">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_d_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction2">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_a_binarywidth">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction3">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_sclr">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dreg_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction4">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dreg_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction5">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_acout">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dreg_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction6">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction7">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_instruction8">#</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cinreg_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cinreg_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cinreg_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cinreg_4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cinreg_5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_d_width">18</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_has_ce">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_c_width">48</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc3sd3400a</xilinx:device>
+               <xilinx:deviceFamily>spartan3adsp</xilinx:deviceFamily>
+               <xilinx:package>cs484</xilinx:package>
+               <xilinx:speedGrade>-5</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>Verilog</xilinx:designEntry>
+               <xilinx:asySymbol>true</xilinx:asySymbol>
+               <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+   </spirit:componentInstances>
+   <spirit:description></spirit:description>
+   <spirit:vendorExtensions>
+      <xilinx:instanceProperties>
+       <xilinx:projectOptions>
+         <xilinx:projectName>coregen</xilinx:projectName>
+         <xilinx:outputDirectory>./</xilinx:outputDirectory>
+         <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+         <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+       </xilinx:projectOptions>
+       <xilinx:part>
+         <xilinx:device>xc3sd3400a</xilinx:device>
+         <xilinx:deviceFamily>spartan3adsp</xilinx:deviceFamily>
+         <xilinx:package>cs484</xilinx:package>
+         <xilinx:speedGrade>-5</xilinx:speedGrade>
+       </xilinx:part>
+       <xilinx:flowOptions>
+         <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+         <xilinx:designEntry>Verilog</xilinx:designEntry>
+         <xilinx:asySymbol>true</xilinx:asySymbol>
+         <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+         <xilinx:addPads>false</xilinx:addPads>
+         <xilinx:removeRPMs>false</xilinx:removeRPMs>
+         <xilinx:createNDF>false</xilinx:createNDF>
+         <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+         <xilinx:formalVerification>false</xilinx:formalVerification>
+       </xilinx:flowOptions>
+       <xilinx:simulationOptions>
+         <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+         <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+         <xilinx:foundationSym>false</xilinx:foundationSym>
+       </xilinx:simulationOptions>
+     </xilinx:instanceProperties>
+   </spirit:vendorExtensions>
+</spirit:design>

@@ -1,0 +1,99 @@
+clc
+close all
+clear all
+
+addpath('/home/beams/Documents/Riccardo_Pace_Thesis/Matlab_scripts/matlab_utils-master')
+
+addpath('/home/beams/repos/thesis_ulb/Matlab_scripts/Energy_Detection')
+
+select = 1;
+
+
+%% Initial Parameters
+
+switch select
+    case 3
+        Fs=10e6;          %Sampling 
+        Ts=1/Fs;          %Sampling Period
+        Fc=2400e6;     %Center Frequency
+    otherwise
+        Fs=10e6;          %Sampling
+        Ts=1/Fs;          %Sampling Period
+        Fc=900e6;     %Center Frequency
+ 
+end
+
+%% Read from binary file to complex
+switch select
+    case 0 
+        filename= '../Gnuradio_Samples/FFT_fpga_image/samples_received_anything_fs_10M';                       %name of the input file
+    case 1 
+        %filename= '../Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_802_11_g_OFDM_fc_100M_fs_10M';                       %name of the input file
+        %filename= '../Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_1Mspacing_fc_100M_fs_10M';
+        %filename = '/home/beams/Documents/Riccardo_Pace_Thesis/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_20_200kspacing_fc_100M_fs_10M';
+        %filename = '/home/beams/Documents/Riccardo_Pace_Thesis/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_20_200kspacing_fc_100M_fs_10M_v2';
+        %filename = '/home/beams/Documents/Riccardo_Pace_Thesis/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_20_200kspacing_fc_100M_fs_10M_v3';
+        %filename = '/home/beams/Documents/Riccardo_Pace_Thesis/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_20_200kspacing_fc_100M_fs_10M_v4';
+        %filename = '/home/beams/Documents/Riccardo_Pace_Thesis/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_20_200kspacing_fc_100M_fs_10M_v5';
+        %filename = '/home/beams/repos/thesis_ulb/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_1Mspacing_fc_100M_fs_10M.dat';
+        %filename = '/home/beams/repos/thesis_ulb/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_sig_multi_carrier_8_1Mspacing_fc_100M_fs_10M_v1_fft_v2.dat';
+        % filename = '/home/beams/repos/thesis_ulb/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/sampled_data_multi_sig_Bluethoot_std_fc_100M_fs_10M_fft_image_v1.dat';
+        %filename = '/home/beams/repos/thesis_ulb/Host_cpp_programs/WBX/Rx_n_samples_to_file_WBX_frequency_span_v7_sol1_ok/build/received_data_sweep0';
+        filename = '/home/beams/repos/thesis_ulb/Matlab_scripts/Gnuradio_Samples/FFT_fpga_image/WBX/FFT_module/sampled_data_sig_TETRA_std_fc_400M_fs_10M_fft_image_v2.dat';
+    case 3 
+        %filename='/home/beams/repos/thesis_ulb/Host_cpp_programs/Rx_n_samples_to_file_RFX_v2/build/received_data.dat'
+end
+
+complex_signal_usrp=read_complex_binary(filename);  %complex signal read from the file
+
+complex_signal_usrp = complex_signal_usrp*2^11;
+%% Time Domain Analysis
+n = length(complex_signal_usrp);  %Sampling points
+t = 0:Ts:(n * Ts)-Ts;             %time
+[s1,s2]= size(complex_signal_usrp);
+
+%% Frequency Domain Analysis
+N=1024     %number of points
+fo = Fs/N;                           %frequency resolution
+f=(0:N-1)*fo + (Fc-Fs/2);%frequency points for plotting
+%Y=(abs(fftshift(complex_signal_usrp)));
+%Y_db = 10*log10(abs(fftshift(complex_signal_usrp)));
+w = ones(1024,1);
+power = w'*w;
+
+%while 1
+for k=0:5
+
+Y=(abs(fftshift(complex_signal_usrp((k*N)+1:((k*N)+N),1)))).^2;
+
+Y_x=zeros(N,1);
+for l=1:1:N
+   Y_x(l,1)= Y(N-l+1,1); 
+end
+Y=Y_x;
+Y_db = 10*log10(Y);%-10*log(power/1024);
+%sum(Y)/N
+%[noise_power_est Y_noise ]= Noise_Energy_Estimation_v3(Y,40,Fs);
+
+figure(1);
+set(gcf, 'Position', get(0,'Screensize')); % Maximize figure. 
+subplot(2,1,1)
+plot(f/1e6,Y,'-b*');
+xlabel("Frequency[MHz]");
+ylabel("Amplitude Linear");
+
+% subplot(3,1,2);
+% plot(f(N/2:N)/1e6,Y((N/2:N),1));
+% xlabel("Frequency[MHz]");
+% ylabel("Amplitude");
+
+subplot(2,1,2);
+plot(f/1e6,Y_db);
+xlabel("Frequency[MHz]");
+ylabel("Amplitude[dB]");
+%hold on;
+%plot(f/1e6,10*log10(noise_power_est)*ones(1024,1));
+%hold off
+pause()
+end
+%end

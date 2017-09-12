@@ -1,0 +1,15 @@
+#
+# Copyright 2010 Ettus Research LLC
+#
+##################################################
+# Coregen Sources
+##################################################
+#COREGEN_SRCS = $(abspath $(addprefix $(BASE_DIR)/../coregen/, \
+/acc_sub.v \
+/acc_sub.xco \
+/counter_mod_3.v \
+/counter_mod_3.xco \
+/fifo_s16.v \
+/fifo_s16.xco \
+/fifo_s20.v \
+/fifo_s20.xco))
