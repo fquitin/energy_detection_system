@@ -6,3 +6,4 @@ The Energy Detection System folder includes these parts:
 
 - Matlab -> some script useful to read the samples stored and to compare the simulated results.
 
+Riccardo Pace (2018)
